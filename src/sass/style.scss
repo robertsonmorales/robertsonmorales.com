@@ -1,0 +1,29 @@
+@import 'font';
+@import 'variables';
+@import 'mixins';
+
+// @import '../../plugins/bootstrap/scss/bootstrap';
+
+@import "~bootstrap/scss/bootstrap";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: $body-bg;   
+    color: $dark;
+    font: $font-size $font-stack;
+}
+
+@import 'overwrite';
+@import 'custom';
+@import 'status';
+@import 'breakpoint';

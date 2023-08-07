@@ -1,0 +1,199 @@
+// HEADINGS
+.h1, .h2, .h3, .h4, .h5, .h6, 
+h1, h2, h3, h4, h5, h6{
+    font-weight: 600;
+}
+
+.h1{
+    font-size: clamp(1.8rem, 6vw, 4rem);
+}
+
+.display-1{
+    font-size: clamp(1.8rem, 6vw, 4rem);;
+    // line-height: 80px;
+    font-family: $font-bold;
+}
+
+#intro{
+    .font-stack-1{
+        position: relative;
+
+        .feather{
+            position: absolute;
+            right: -29px;
+            bottom: -4px;
+        }
+    }
+
+    code{
+        font-family: $font-stack;
+    }
+}
+// HEADINGS
+
+// BORDERS
+.rounded{
+    border-radius: $radius !important;
+}
+
+.rounded-top{
+    border-top-left-radius: 50% !important;
+    border-top-right-radius: 50% !important;
+}
+// ENDS HERE
+
+// NAVIGATION
+
+.navbar-light .navbar-nav .nav-link{
+    color: #555;
+    font-weight: normal;
+}
+
+.navbar{
+    .navbar-brand{
+        border: none;
+        background-color: transparent;
+        outline: none;
+    }
+    
+    .nav-link{
+        outline: none;
+        border: none;
+        background-color: transparent;
+        font-size: $font-size;
+        font-weight: 600;
+        color: $dark;
+
+        &:hover{
+            color: $primary !important;
+        }
+    }
+
+    #nav-download{
+        .feather{
+            width: 16px;
+        }
+    }
+}
+
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active{
+    font-weight: 600;
+    color: $primary !important;
+    transform: scale(1.05);
+    transition: font-weight .1s linear;
+}
+// ENDS HERE
+
+// BUTTONS
+.btn{
+    border-radius: $radius !important;
+    padding: 10px 20px;
+    font-weight: 500;
+    font-size: $font-size;
+
+    .feather{
+        width: 16px;
+        height: 16px;
+    }
+}
+// ENDS HERE
+
+// CARDS
+.card{
+    border-radius: $card-radius !important;
+    border: $border;
+    // background-color: $saturated_primary;
+    // @extend .glassmorphism;
+    
+    .card-header{
+        border: none;
+        background-color: transparent;
+    }
+
+    .card-footer{
+        border: none;
+        background-color: transparent;
+    }
+}
+// ENDS HERE
+
+// FONT
+.font-weight-bolder{
+    font-weight: 800 !important;
+}
+// ENDS HERE
+
+// BADGE
+.badge{
+    background-color: $saturated_primary;
+    color: $primary;
+    font-weight: 500;
+    font-size: 0.875rem;
+    border: $border;
+    border-radius: $radius;
+}
+// ENDS HERE
+
+// FORMS
+.input-group{
+    label{
+        @extend .text-muted;
+    }
+
+    .form-control{
+        width: 100%;
+        border-radius: $radius !important;
+
+        &:focus{
+            font-weight: 500;
+        }
+    }
+
+    .custom-control{
+        display: inline;
+        margin-right: 15px;
+    }
+
+    .custom-control-label{
+        font-weight: normal;
+        
+        &::after{
+            top: 3px;
+        }
+
+        &::before{
+            top: 0.2rem;
+        }
+    }
+
+    // & > textarea{
+    //     resize: none;
+    // }
+    
+    .invalid-feedback{
+        font-weight: normal !important;
+        font-size: $font-size-sm;
+    }
+}
+// ENDS HERE
+
+// list group
+.list-group{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .list-group-item{
+        background-color: transparent;
+        padding: 10px 0;
+        border: none;
+        text-align: center;
+    }
+}
+
+// Carousel
+.carousel-indicators{
+    position: static;
+}
