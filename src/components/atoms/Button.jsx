@@ -6,15 +6,20 @@ class Button extends React.Component {
         this.state = { 
             id: props.id,
             className: props.className,
-            text: props.text
+            text: props.text,
+            goto: props.goto
         };
+    }
+
+    navSelected(nav){
+        console.log(nav);
     }
     
     render() { 
         return (
             <button className={this.state.className}
-                onClick="navSelected('services')"
-                id={this.state.id}>{this.state.text}</button>
+                onClick={ this.navSelected('services') }
+                id={ this.state.id }>{ this.state.text }</button>
         )
     }
 }

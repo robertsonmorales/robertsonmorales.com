@@ -2,14 +2,58 @@ import React from 'react';
 
 import FeatherIcon from "feather-icons-react";
 
+const socmed = [
+  {
+    url: 'https://www.facebook.com/robertsonmorales.dev',
+    title: 'Follow me on Facebook',
+    icon: 'facebook'
+  },
+  {
+    url: 'https://www.instagram.com/robertson.morales',
+    title: 'Follow me on Instagram',
+    icon: 'instagram'
+  },
+  {
+    url: 'https://www.linkedin.com/in/robertson-morales',
+    title: 'Connect with me on LinkedIn',
+    icon: 'linkedin'
+  },
+  {
+    url: 'https://dribbble.com/robertsonmorales',
+    title: 'Follow me on Dribbble',
+    icon: 'dribbble'
+  },
+];
+
 class Contact extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      form_action: 'https://submit-form.com/jB4EPKoR'
+      form_action: 'https://submit-form.com/jB4EPKoR',
+      socmed
     }
   }
+
+  renderSocialMedia() {
+    let socialMedia = this.state.socmed.map(media => {
+      return (
+        <a
+          href={ media.url}
+          target="_blank"
+          title={ media.title}
+          rel="noopener noreferrer"
+          className="btn-socmedia"
+        >
+          <FeatherIcon className="icon-wrapper" icon={ media.icon } />
+        </a>
+      )
+    });
+
+    return socialMedia;
+
+  }
+
   render() {
     return (
       <section id="contact" className="py-5 bg-light">
@@ -34,47 +78,7 @@ class Contact extends React.Component {
                 </div>
 
                 <div className="contact-information my-4">
-                  <div className="flexbox-start">
-                    <a
-                      href="https://www.facebook.com/robertsonmorales.dev/"
-                      target="_blank"
-                      title="Follow me on Facebook"
-                      rel="noopener noreferrer"
-                      className="btn-socmedia"
-                    >
-                      <FeatherIcon className="icon-wrapper" icon="facebook" />
-                    </a>
-
-                    <a
-                      href="https://www.instagram.com/robertson.morales/"
-                      target="_blank"
-                      title="Follow me on Instagram"
-                      rel="noopener noreferrer"
-                      className="btn-socmedia"
-                    >
-                      <FeatherIcon className="icon-wrapper" icon="instagram" />
-                    </a>
-
-                    <a
-                      href="https://www.linkedin.com/in/robertson-morales"
-                      target="_blank"
-                      title="Connect with me on LinkedIn"
-                      rel="noopener noreferrer"
-                      className="btn-socmedia"
-                    >
-                      <FeatherIcon className="icon-wrapper" icon="linkedin" />
-                    </a>
-
-                    <a
-                      href="https://dribbble.com/robertsonmorales"
-                      target="_blank"
-                      title="Follow me on Dribbble"
-                      rel="noopener noreferrer"
-                      className="btn-socmedia"
-                    >
-                      <FeatherIcon className="icon-wrapper" icon="dribbble" />
-                    </a>
-                  </div>
+                  <div className="flexbox-start">{ this.renderSocialMedia() }</div>
                 </div>
 
                 <div className="row flex-column flex-lg-row">
@@ -124,9 +128,7 @@ class Contact extends React.Component {
                 </div>
 
                 <div className="flexbox-start">
-                  <button className="btn btn-primary w-100" id="btn-submit" type="button">
-                    Send Message
-                  </button>
+                  <button className="btn btn-primary w-100" id="btn-submit" type="button">Send Message</button>
                 </div>
               </form>
             </div>

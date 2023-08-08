@@ -1,42 +1,50 @@
 import React from 'react';
 
+import MyContactDetails from "../data/contact";
+
 class Footer extends React.Component {
+    constructor(props){
+        super(props);
+
+        this.state = { contacts: MyContactDetails };
+    }
+
+    renderContacts() {
+        let contacts = this.state.contacts.map((contact, index) => {
+            if(contact.type === 1){
+                return (
+                    <li className="list-group-item" key={ index }>
+                        <span className="text-muted">{ contact.label }</span>
+                        <a
+                            href={ contact.redirect }
+                            id={ contact.id }
+                            title={ contact.title }
+                            className="text-decoration-none"
+                        >
+                            <h5 className="text-dark">{ contact.value }</h5>
+                        </a>
+                    </li>
+                );
+            }else{
+                return (
+                    <li className="list-group-item text-muted" key={ index }>
+                        <span className="text-muted">{ contact.label }</span>
+                        <h5 className="text-dark">{ contact.value }</h5>
+                    </li>
+                );
+            }
+        });
+
+        return contacts;
+    }
+
     render() {
         return (
             <footer>
                 <div className="text-center py-1 pb-5 bg-light">
                     <div className="container">
                     <ul className="list-group">
-                        <li className="list-group-item">
-                        <span className="text-muted">Or Email Me</span>
-                        <a
-                            href="mailto:robertsonmorales23@gmail.com?cc=trebormoralesson@gmail.com"
-                            id="btn-email"
-                            title="Send message via mail"
-                            className="text-decoration-none"
-                        >
-                            <h5 className="text-dark">robertsonmorales23@gmail.com</h5>
-                        </a>
-                        </li>
-
-                        <li className="list-group-item">
-                        <span className="text-muted">Or Call Me</span>
-                        <a
-                            href="https://api.whatsapp.com/send?phone=639552808438"
-                            id="btn-call"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            title="Open and send a message to Whatsapp"
-                            className="text-decoration-none"
-                        >
-                            <h5 className="text-dark">+63 9552808438</h5>
-                        </a>
-                        </li>
-
-                        <li className="list-group-item text-muted">
-                        <span className="text-muted">Or Let's Hang out!</span>
-                        <h5 className="text-dark">San Jose Del Monte, Bulacan, Philippines</h5>
-                        </li>
+                        { this.renderContacts() }
                     </ul>
                     </div>
                 </div>

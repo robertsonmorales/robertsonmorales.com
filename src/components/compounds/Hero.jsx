@@ -18,13 +18,15 @@ class Hero extends React.Component {
                             <div className="call-to-actions">
                                 <Button className="btn btn-primary mb-1 mb-md-0 mr-2 mobile-w-100"
                                     id="btn-my-services"
-                                    text="My Services" />
+                                    text="My Services"
+                                    goto="services" />
         
                                 <div className="d-block d-md-none w-100"></div>
 
                                 <Button className="btn btn-outline-primary mobile-w-100"
                                     id="btn-my-works"
-                                    text="See My Work &#8594;" />
+                                    text="See My Work &#8594;"
+                                    goto="works" />
                             </div>
                         </div>
                     </div>

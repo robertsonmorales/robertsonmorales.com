@@ -5,9 +5,9 @@ import Project from "../molecules/Project";
 import MyWorks from "../../data/works";
 
 function Works() {
-    const renderWorks = MyWorks.map(work => {
+    const renderWorks = MyWorks.map((work, index) => {
         return (
-            <Project details={work} />
+            <Project details={work} key={ index } />
         );
     })
 
