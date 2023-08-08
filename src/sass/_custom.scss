@@ -18,7 +18,7 @@
 
 /* IMAGES */
 .img-fluid-extension{
-    object-fit: fill;
+    object-fit: contain;
     width: 110px;
     height: 110px;
 }
@@ -178,6 +178,11 @@
 
 // * Skills
 .skill-gallery{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
     .skill-img{
         filter: saturate(0.1);
         transition: filter 0.4s ease-in-out;

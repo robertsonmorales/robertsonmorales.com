@@ -2,6 +2,10 @@ import React from 'react';
 import FeatherIcon from 'feather-icons-react';
 
 class Header extends React.Component {
+    navSelected(nav){
+        // alert(nav);
+    }
+
     render(){
         return (
             <header>
@@ -35,7 +39,7 @@ class Header extends React.Component {
                                             type="button"
                                             className="nav-link navbar active"
                                             id="nav-hero"
-                                            onclick="navSelected('hero')"
+                                            onClick={this.navSelected('hero')}
                                         >Home</button>
                                     </li>
                                     <li className="nav-item">
@@ -43,7 +47,7 @@ class Header extends React.Component {
                                             type="button"
                                             className="nav-link navbar"
                                             id="nav-services"
-                                            onclick="navSelected('services')"
+                                            onClick={this.navSelected('services')}
                                         >Services</button>
                                     </li>
                                     <li className="nav-item">
@@ -51,7 +55,7 @@ class Header extends React.Component {
                                             type="button"
                                             className="nav-link navbar"
                                             id="nav-works"
-                                            onclick="navSelected('works')"
+                                            onClick={this.navSelected('works')}
                                         >Work</button>
                                     </li>
                                     <li className="nav-item">
@@ -59,7 +63,7 @@ class Header extends React.Component {
                                             type="button"
                                             className="nav-link navbar"
                                             id="nav-about-me"
-                                            onclick="navSelected('about-me')"
+                                            onClick={this.navSelected('about-me')}
                                         >About Me</button>
                                     </li>
                                     <li className="nav-item">
@@ -78,7 +82,7 @@ class Header extends React.Component {
                                             type="button"
                                             className="nav-link navbar"
                                             id="nav-testimonials"
-                                            onclick="navSelected('testimonials')"
+                                            onClick={this.navSelected('testimonials')}
                                         >Testimonials</button>
                                     </li>
                                     <li className="nav-item">
@@ -86,7 +90,7 @@ class Header extends React.Component {
                                             type="button"
                                             className="nav-link navbar"
                                             id="nav-contact"
-                                            onclick="navSelected('contact')"
+                                            onClick={this.navSelected('contact')}
                                         >Contacts</button>
                                     </li>
                                 </ul>

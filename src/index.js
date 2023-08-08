@@ -8,7 +8,7 @@ import './sass/style.css';
 import 'jquery/dist/jquery.min.js';
 import 'popper.js/dist/umd/popper.min.js';
 import 'bootstrap/dist/js/bootstrap.min.js';
-import 'https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js';
+// import 'https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js';
 
 import App from './App';
 import reportWebVitals from './reportWebVitals';

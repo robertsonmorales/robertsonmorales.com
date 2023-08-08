@@ -7,7 +7,7 @@ import MyServices from "../../data/services";
 export default function Services () {
   const renderServices = MyServices.map(service => {
     return (
-      <Service details={service} />
+      <Service details={service} key={ service.id } />
     );
   });
 

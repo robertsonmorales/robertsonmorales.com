@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import Subheadline from "../atoms/Subheadline";
 import Skills from "../../data/skills";
 
 class SkillsAndExpertise extends Component {
@@ -13,6 +14,7 @@ class SkillsAndExpertise extends Component {
         title={skill.name}
         width="110"
         height="110"
+        loading='lazy'
       />
     ));
   }
@@ -21,13 +23,12 @@ class SkillsAndExpertise extends Component {
     return (
       <section id="skills" className="py-5 py-md-0 screen-height bg-light">
         <div className="container text-center">
-          <div className="mb-4">
-            <div className="text-section">ABOUT MY</div>
-            <h2 className="text-highlight">Skills & Expertise</h2>
-          </div>
+          <Subheadline 
+            section="ABOUT MY"
+            label="Skills & Expertise" />
 
           <div className="skill-gallery">
-            {this.renderSkills()}
+            { this.renderSkills() }
           </div>
         </div>
       </section>

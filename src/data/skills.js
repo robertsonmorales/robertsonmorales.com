@@ -11,11 +11,11 @@ import Laravel from "../images/skills/laravel.svg";
 import Git from "../images/skills/git.svg";
 import Figma from "../images/skills/figma-1.svg";
 import Wix from "../images/skills/wix.svg";
-import OutSystems from "../images/skills/outsystems.svg";
+import OutSystems from "../images/skills/outsystems-1.svg";
 import MongoDB from "../images/skills/mongodb.svg";
 import NodeJS from "../images/skills/nodejs.svg";
 import ExpressJS from "../images/skills/expressjs.svg";
-import Firebase from "../images/skills/firebase.svg";
+import Firebase from "../images/skills/firebase-1.svg";
 import ReactJS from "../images/skills/reactjs.svg";
 import PostgreSQL from "../images/skills/postgreSQL.svg";
 

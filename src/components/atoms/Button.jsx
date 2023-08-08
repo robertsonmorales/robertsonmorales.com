@@ -1,11 +1,22 @@
-export default function Button ({ className, id, text }) {
-    return (
-        <button className={className}
-            onClick="navSelected('services')"
-            id={id}>{text}</button>
+import React from "react"
 
-        // <button className="btn btn-primary mb-1 mb-md-0 mr-1 mobile-w-100"
-        //     onclick="navSelected('services')"
-        //     id="btn-my-works">My Services</button>
-    )
+class Button extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = { 
+            id: props.id,
+            className: props.className,
+            text: props.text
+        };
+    }
+    
+    render() { 
+        return (
+            <button className={this.state.className}
+                onClick="navSelected('services')"
+                id={this.state.id}>{this.state.text}</button>
+        )
+    }
 }
+
+export default Button;

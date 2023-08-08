@@ -1,3 +1,5 @@
+import React from 'react';
+
 function Tag({ name }) {
     return (
         <div className="built-with-using">

@@ -1,6 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Contact extends Component {
+import FeatherIcon from "feather-icons-react";
+
+class Contact extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      form_action: 'https://submit-form.com/jB4EPKoR'
+    }
+  }
   render() {
     return (
       <section id="contact" className="py-5 bg-light">
@@ -14,19 +23,17 @@ class Contact extends Component {
             <div className="col col-lg-5 background-img border-radius"></div>
             <div className="col col-lg-7">
               <form
-                action="https://submit-form.com/jB4EPKoR"
+                action={ this.state.form_action }
                 method="POST"
                 id="contact-form"
                 className="p-4 p-lg-5"
               >
                 <div className="w-100">
                   <h4>Work With Me!</h4>
-                  <p className="text-muted">
-                    Fill up the form and I will get back to you within 24 hours. Thank you!
-                  </p>
+                  <p className="text-muted">Fill up the form and I will get back to you within 24 hours. Thank you!</p>
                 </div>
 
-                <div className="contact-information mb-4">
+                <div className="contact-information my-4">
                   <div className="flexbox-start">
                     <a
                       href="https://www.facebook.com/robertsonmorales.dev/"
@@ -35,7 +42,7 @@ class Contact extends Component {
                       rel="noopener noreferrer"
                       className="btn-socmedia"
                     >
-                      <em className="icon-wrapper" data-feather="facebook"></em>
+                      <FeatherIcon className="icon-wrapper" icon="facebook" />
                     </a>
 
                     <a
@@ -45,7 +52,7 @@ class Contact extends Component {
                       rel="noopener noreferrer"
                       className="btn-socmedia"
                     >
-                      <em className="icon-wrapper" data-feather="instagram"></em>
+                      <FeatherIcon className="icon-wrapper" icon="instagram" />
                     </a>
 
                     <a
@@ -55,7 +62,7 @@ class Contact extends Component {
                       rel="noopener noreferrer"
                       className="btn-socmedia"
                     >
-                      <em className="icon-wrapper" data-feather="linkedin"></em>
+                      <FeatherIcon className="icon-wrapper" icon="linkedin" />
                     </a>
 
                     <a
@@ -65,7 +72,7 @@ class Contact extends Component {
                       rel="noopener noreferrer"
                       className="btn-socmedia"
                     >
-                      <em className="icon-wrapper" data-feather="dribbble"></em>
+                      <FeatherIcon className="icon-wrapper" icon="dribbble" />
                     </a>
                   </div>
                 </div>
