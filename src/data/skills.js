@@ -9,7 +9,7 @@ import PHP from "../images/skills/php.svg";
 import MySQL from "../images/skills/mysql.svg";
 import Laravel from "../images/skills/laravel.svg";
 import Git from "../images/skills/git.svg";
-import Figma from "../images/skills/figma.svg";
+import Figma from "../images/skills/figma-1.svg";
 import Wix from "../images/skills/wix.svg";
 import OutSystems from "../images/skills/outsystems.svg";
 import MongoDB from "../images/skills/mongodb.svg";
