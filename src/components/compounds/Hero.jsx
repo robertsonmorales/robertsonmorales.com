@@ -3,6 +3,16 @@ import React from "react";
 import Button  from '../atoms/Button';
 
 class Hero extends React.Component {
+    constructor(props) {
+        super(props);
+
+        this.navigateTo = this.navigateTo.bind(this);
+    }
+
+    navigateTo(){
+        alert('nav')
+    }
+
     render(){
         return (
             <section id="hero" className="screen-height">
@@ -19,14 +29,16 @@ class Hero extends React.Component {
                                 <Button className="btn btn-primary mb-1 mb-md-0 mr-2 mobile-w-100"
                                     id="btn-my-services"
                                     text="My Services"
-                                    goto="services" />
+                                    onClick={ () => this.navigateTo }
+                                />
         
                                 <div className="d-block d-md-none w-100"></div>
 
                                 <Button className="btn btn-outline-primary mobile-w-100"
                                     id="btn-my-works"
                                     text="See My Work &#8594;"
-                                    goto="works" />
+                                    onClick={ () => this.navigateTo }
+                                />
                             </div>
                         </div>
                     </div>

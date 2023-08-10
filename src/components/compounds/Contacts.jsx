@@ -36,7 +36,7 @@ class Contact extends React.Component {
   }
 
   renderSocialMedia() {
-    let socialMedia = this.state.socmed.map(media => {
+    let socialMedia = this.state.socmed.map((media, index) => {
       return (
         <a
           href={ media.url}
@@ -44,6 +44,7 @@ class Contact extends React.Component {
           title={ media.title}
           rel="noopener noreferrer"
           className="btn-socmedia"
+          key={ index }
         >
           <FeatherIcon className="icon-wrapper" icon={ media.icon } />
         </a>
