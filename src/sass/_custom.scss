@@ -18,7 +18,7 @@
 
 /* IMAGES */
 .img-fluid-extension{
-    object-fit: contain;
+    object-fit: fill;
     width: 110px;
     height: 110px;
 }
@@ -89,6 +89,10 @@
     }
 
     .card-body{
+        .card-title{
+            @extend .font-stack-1;
+        }
+
         .card-text{
             color: $text-muted;
         }
@@ -114,6 +118,8 @@
 .img-fluid-hovered{
     width: 100%;
     transition: all .4s ease;
+    // aspect-ratio: 1.32;
+    object-fit: fill;
 
     &:hover{
         opacity: .9;
@@ -123,7 +129,7 @@
 
 .screen-height{
     min-height: 100vh;
-    @extend .flexbox-center;
+    @extend .flexbox-center, .bg-primary--saturated;
 }
 
 .saturate{
@@ -135,6 +141,10 @@
     color: $primary;
 }
 
+.text-highlight{
+    @extend .font-stack-1;    
+}
+
 .flexbox-works{
     align-items: center;
     flex-direction: column-reverse;
@@ -143,20 +153,21 @@
 
 // * Builth with ???
 .built-with{
+    list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-}
-
-.built-with-using{
-    @extend .mt-2, .mr-2;
+    align-items: center;
+    justify-content: flex-start;
+    @extend .gap-sm, .mb-0;
 }
 // * ends here
 
 // * Works here
 .work-img-wrapper{  
-    @extend .mb-4, .mb-md-0;
     border-radius: $card-radius;
     overflow: hidden;
+
+    @extend .mb-4, .mb-md-0;
 
     img{
         transition: all .4s ease-in-out;
@@ -168,29 +179,28 @@
 }
 
 .work-description{
-    @extend .text-muted;
+    color: $text-muted;
 }
 
 .work-action{
-    @extend .mt-4, .flexbox-start;
+    @extend .flexbox-start;
 }
 // * ends here
 
 // * Skills
 .skill-gallery{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-
     .skill-img{
-        filter: saturate(0.1);
-        transition: filter 0.4s ease-in-out;
-        @extend .img-fluid, .img-fluid-extension;
+        transition: all 0.4s ease-in-out;
+        width: 110px;
+        height: 110px;
+        object-fit: contain;
+        aspect-ratio: 1 / 1;
 
-       &:hover{
-            filter: saturate(1);
-       }
+        @extend .p-4, .img-fluid, .img-fluid-extension;
+
+        &:hover{
+            transform: scale(1.1);
+        }
     }
 }
 // * ends here
@@ -219,7 +229,7 @@
 }
 
 .bg-primary--saturated{
-    background-color: unquote($primary + "22");
+    background-color: unquote($yellow + "05");
 }
 
 .my-avatar{
@@ -286,6 +296,7 @@
 
 .font-stack-1{
     font-family: $font-stack-1 !important;
+    letter-spacing: .4px;
 }
 
 .border-top-left-radius{
@@ -386,21 +397,6 @@
     @extend .bg-primary;
 }
 
-#carouselOnlineBanking > .carousel-indicators li,
-#carouselTravelBuddy > .carousel-indicators li,
-#carouselCareerSpace > .carousel-indicators li,
-#carouselTimeboard > .carousel-indicators li{
-    background-color: $light;
-    opacity: 1;
-}
-
-#carouselOnlineBanking > .carousel-indicators li.active,
-#carouselTravelBuddy > .carousel-indicators li.active,
-#carouselCareerSpace > .carousel-indicators li.active,
-#carouselTimeboard > .carousel-indicators li.active{
-    @extend .bg-primary;
-}
-
 .carousel-navigators{
     // background-image: linear-gradient(to bottom, #ffffff10 0%, #ffffff10 0%, #ffffff10 0%, #00000040 100%);
     display: flex;
@@ -442,12 +438,17 @@
     height: 60px;
     border-radius: 100%;
     @extend .flexbox-center;
+
+    img{
+        width: 60px;
+        height: 60px;
+        aspect-ratio: 1 / 1;
+    }
 }
 
 .testimonial-quote{
-    line-height: 37px;
-    font-size: 24px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: normal;
 }
 
 .testimonial--highlight{
@@ -461,6 +462,18 @@
 
 .gap-x-base{
     row-gap: 16px;
+}
+
+.gap-x-sm{
+    row-gap: 12px;
+}
+
+.gap-base{
+    gap: 16px;
+}
+
+.gap-sm{
+    gap: 8px;
 }
 
 .btn-contact{
@@ -507,7 +520,7 @@
 }
 
 .background-img{
-    background-image: linear-gradient(to right, #4e31cd55, #6440ff33), url("../images/bg.jpg");
+    background-image: url("../images/bg.svg"); 
     background-position: left;
     background-size: cover;
 }
