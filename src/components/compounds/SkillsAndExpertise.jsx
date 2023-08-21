@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import Subheadline from "../atoms/Subheadline";
 import Skills from "../../data/skills";
 
-class SkillsAndExpertise extends Component {
+class SkillsAndExpertise extends React.Component {
   renderSkills() {
     return Skills.map(skill => (
       <img
