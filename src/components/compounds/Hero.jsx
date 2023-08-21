@@ -26,7 +26,7 @@ class Hero extends React.Component {
                             <h5 className="text-muted font-weight-normal mb-3 mb-md-4" id="specialize">Unleashing Business Potential in the Digital Era through Web Development & Design</h5>
         
                             <div className="call-to-actions">
-                                <Button className="btn btn-primary mb-1 mb-md-0 mr-2 mobile-w-100"
+                                <Button selector="btn btn-primary mb-1 mb-md-0 mr-2 mobile-w-100"
                                     id="btn-my-services"
                                     text="My Services"
                                     onClick={ () => this.navigateTo }
@@ -34,7 +34,7 @@ class Hero extends React.Component {
         
                                 <div className="d-block d-md-none w-100"></div>
 
-                                <Button className="btn btn-outline-primary mobile-w-100"
+                                <Button selector="btn btn-outline-primary mobile-w-100"
                                     id="btn-my-works"
                                     text="See My Work &#8594;"
                                     onClick={ () => this.navigateTo }

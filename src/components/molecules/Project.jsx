@@ -19,11 +19,30 @@ class Project extends React.Component {
     }
 
     renderLayout() {
-        const reversedLayout = (this.state.details.isReversed 
+        const reversedLayout = (this.state.details.is_reversed 
             ? "row no-gutters flexbox-works flex-md-row-reverse"
             : "row no-gutters flexbox-works flex-md-row");
 
         return reversedLayout;
+    }
+
+    renderButton() {
+        if(this.state.details.show_button) {
+            return (
+                <div className="work-action">
+                    <a href={ this.state.details.link } 
+                        target="_blank"
+                        title="View More" 
+                        rel="noopener noreferrer" 
+                        className="btn btn-primary mobile-w-100">
+                        <div className="d-flex align-items-center">
+                            <span className="mr-2">{ this.state.details.button_text }</span>
+                            <FeatherIcon icon="external-link" className="font-size-sm" />
+                        </div>
+                    </a>
+                </div>
+            )
+        }
     }
 
     render() {
@@ -39,33 +58,20 @@ class Project extends React.Component {
     
                     <p className="work-description">{  this.state.details.description }</p>
             
-                    <div className="work-action">
-                        <a href={ this.state.details.link } 
-                            target="_blank"
-                            title="View More" 
-                            rel="noopener noreferrer" 
-                            className="btn btn-primary mobile-w-100">
-                            <div className="d-flex align-items-center">
-                                <span className="mr-2">View More</span>
-                                <FeatherIcon icon="external-link" className="font-size-sm" />
-                            </div>
-                        </a>
-                    </div>
+                    { this.renderButton() }
                 </div>
                 <div className="col-md-1"></div>
                 <div className="col-md-6">
                     <div className="work-img-wrapper">
-                        <div>
-                            <a href={ this.state.details.link }
-                                target="_blank" 
-                                rel="noopener noreferrer">
-                                <img src={ this.state.details.image } 
-                                    className="img-fluid rounded img-fluid-hovered"
-                                    alt={ this.state.details.title }
-                                    width="500"
-                                    height="380" />
-                            </a>
-                        </div>
+                        <a href={ (this.state.details.show_button) ? this.state.details.link : '' }
+                            target="_blank" 
+                            rel="noopener noreferrer">
+                            <img src={ this.state.details.image } 
+                                className="img-fluid rounded img-fluid-hovered"
+                                alt={ this.state.details.title }
+                                width="500"
+                                height="380" />
+                        </a>
                     </div>
                 </div>
             </div>
