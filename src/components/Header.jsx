@@ -16,7 +16,7 @@ class Header extends React.Component {
                     <div className="container from-nav mx-3 mx-md-auto">
                         <a className="navbar-brand border-0 bg-transparent outline-none" href="/">
                             <div className="h4 mb-0 font-weight-500 font-stack-1">
-                            Robertson<span className="text-primary">.</span>
+                            RM<span className="text-primary">.</span>
                             </div>
                         </a>
                         <button

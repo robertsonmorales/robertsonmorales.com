@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Subheadline from "../atoms/Subheadline";
-import QuoteIcon from "../../images/quote.png";
+import QuoteIcon from "../../images/quote.svg";
 import ClientTestimonials from "../../data/testimonials";
 
 class Testimonials extends React.Component {
@@ -47,8 +47,8 @@ class Testimonials extends React.Component {
       <section id="testimonials" className="py-5">
         <div className="container">
           <Subheadline 
-            section="TESTIMONIALS" 
-            label="What my clients say.." />
+            section="Testimonials" 
+            label="What my clients' say.." />
 
           <div id="carouselTestimonials" className="carousel slide" data-ride="carousel">
             <div className="carousel-inner">{ this.renderItem() }</div>

@@ -129,7 +129,7 @@
 
 .screen-height{
     min-height: 100vh;
-    @extend .flexbox-center, .bg-primary--saturated;
+    @extend .flexbox-center, .bg-warning--saturated;
 }
 
 .saturate{
@@ -158,6 +158,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: flex-start;
+
     @extend .gap-sm, .mb-0;
 }
 // * ends here
@@ -178,6 +179,10 @@
     }
 }
 
+.work-title{
+    @extend .font-stack-1;
+}
+
 .work-description{
     color: $text-muted;
 }
@@ -189,17 +194,22 @@
 
 // * Skills
 .skill-gallery{
-    .skill-img{
-        transition: all 0.4s ease-in-out;
-        width: 110px;
-        height: 110px;
-        object-fit: contain;
-        aspect-ratio: 1 / 1;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
 
-        @extend .p-4, .img-fluid, .img-fluid-extension;
-
-        &:hover{
-            transform: scale(1.1);
+    .skill-img-wrapper {
+        .skill-img{
+            transition: all 0.4s ease-in-out;
+            width: 110px;
+            height: 110px;
+            object-fit: contain;
+            aspect-ratio: 1 / 1;
+    
+            @extend .p-4, .img-fluid, .img-fluid-extension;
+    
+            &:hover{
+                transform: scale(1.1);
+            }
         }
     }
 }
@@ -229,6 +239,10 @@
 }
 
 .bg-primary--saturated{
+    background-color: unquote($primary + "11");
+}
+
+.bg-warning--saturated{
     background-color: unquote($yellow + "05");
 }
 

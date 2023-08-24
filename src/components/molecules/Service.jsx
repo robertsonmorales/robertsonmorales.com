@@ -14,10 +14,10 @@ function Service({ details }) {
                 <h4 className="mb-4 card-title">{details.title}</h4>
                 <p className="card-text">{details.description}</p>
             </div>
-            <div className="pb-4 pt-2 card-footer">
+            {/* <div className="pb-4 pt-2 card-footer">
                 <a href={details.route} 
                     className="font-weight-500">Learn More →</a>
-            </div>
+            </div> */}
             <div className="card-hover"></div>
         </div>
     )

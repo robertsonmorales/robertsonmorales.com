@@ -25,5 +25,13 @@ body{
 
 @import 'overwrite';
 @import 'custom';
-@import 'status';
 @import 'breakpoint';
+
+img{
+    filter: saturate(0.4);
+    transition: filter .4s ease-in-out;
+
+    &:hover {
+        filter: saturate(1);
+    }
+}

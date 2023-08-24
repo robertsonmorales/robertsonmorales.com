@@ -1,3 +1,5 @@
+import React from "react";
+
 import Subheadline from "../atoms/Subheadline";
 import Button from "../atoms/Button";
 import Project from "../molecules/Project";
@@ -18,7 +20,7 @@ function Works() {
         <section id="works" className="py-5">
             <div className="container">
                 <Subheadline 
-                    section="WORK"
+                    section="Work"
                     label="Recent Projects" />
 
                 { renderWorks }

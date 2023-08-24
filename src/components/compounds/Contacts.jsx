@@ -1,6 +1,7 @@
 import React from 'react';
 
 import FeatherIcon from "feather-icons-react";
+import Subheadline from "../atoms/Subheadline";
 
 const socmed = [
   {
@@ -59,10 +60,9 @@ class Contact extends React.Component {
     return (
       <section id="contact" className="py-5 bg-light">
         <div className="container">
-          <div className="text-center">
-            <div className="text-section">CONTACTS</div>
-            <h2 className="text-highlight">Get in touch and let's work together.</h2>
-          </div>
+          <Subheadline 
+            section="Contacts" 
+            label="Get in touch and <br> let's work together." />
 
           <div className="row no-gutters contact-card flex-column flex-lg-row overflow-hidden">
             <div className="col col-lg-5 background-img border-radius"></div>
