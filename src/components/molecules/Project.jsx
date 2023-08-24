@@ -49,16 +49,15 @@ class Project extends React.Component {
         return (
             <div className={ this.renderLayout() }>
                 <div className="col-md-5">
-                    <div className="d-none d-md-block placeholder placeholder-1"></div>
-                    <h3 className="work-title">{  this.state.details.title }</h3>
-    
-                    <div className="built-with">{ this.renderBuiltWith() }</div>
-                    
-                    <br />
-    
-                    <p className="work-description">{  this.state.details.description }</p>
-            
-                    { this.renderButton() }
+                    <div className="d-flex flex-column gap-x-sm">
+                        <h3 className="work-title mb-0">{  this.state.details.title }</h3>
+        
+                        <ul className="built-with">{ this.renderBuiltWith() }</ul>
+        
+                        <p className="work-description">{  this.state.details.description }</p>
+                
+                        { this.renderButton() }
+                    </div>
                 </div>
                 <div className="col-md-1"></div>
                 <div className="col-md-6">

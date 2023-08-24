@@ -1,12 +1,12 @@
-import RenobuildImage from "../images/projects/renobuild/Thumbnail.png";
-import QuickPOSImage from "../images/projects/quick-pos/dark.webp";
-import CareerSpaceImage from "../images/projects/careerspace/Thmbnail.png";
-import TravelBuddyImage from "../images/projects/travel-buddy/1.png";
-import MobileBankingImage from "../images/projects/online-banking/Main Screens.png";
-import EcommerceImage from "../images/projects/eCommerce/eCommerce.webp";
-import MLSJCImage from "../images/projects/mls-jc-construction-services/mls-jc.webp";
-import ViewconImage from "../images/projects/viewconbg/Viewcon Building Logo - White Bg.png";
-import ProfessionalPortfolioImage from "../images/projects/portfolio/portfolio.webp";
+import RenobuildImage from "../images/projects/renobuild/thumbnail.webp";
+import QuickPOSImage from "../images/projects/quick-pos/thumbnail.webp";
+import CareerSpaceImage from "../images/projects/careerspace/thumbnail.webp";
+import TravelBuddyImage from "../images/projects/travel-buddy/thumbnail.webp";
+import MobileBankingImage from "../images/projects/online-banking/thumbnail.webp";
+import EcommerceImage from "../images/projects/eCommerce/thumbnail.webp";
+import MLSJCImage from "../images/projects/mls-jc-construction-services/thumbnail.webp";
+import ViewconImage from "../images/projects/viewconbg/thumbnail.webp";
+import ProfessionalPortfolioImage from "../images/projects/portfolio/thumbnail.webp";
 
 const myWorks = [
     {
@@ -139,6 +139,9 @@ const myWorks = [
         }, {
             id: 2,
             name: "wix"
+        }, {
+            id: 3,
+            name: "seo"
         }],
         description: "Viewcon Building Group is a Melbourne-based construction company that specializes in custom designed homes and new townhouse developments. With over 17 years of experience, Viewcon prides itself on exceptional customer service and communication throughout the build process.",
         link: "https://www.viewconbg.com.au",
@@ -151,6 +154,9 @@ const myWorks = [
         title: "Professional Portfolio Design",
         tags: [{
             id: 1,
+            name: "uiux-design"
+        },{
+            id: 2,
             name: "frontend-development"
         }],
         description: "This Professional Portfolio Template is a one-page website template that is user-friendly and responsive. It has sections for Clients, Services, Projects, Testimonials, About Me, and Contact Me.",

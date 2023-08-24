@@ -2,6 +2,7 @@ import React from 'react';
 
 import MyProfile from "../../data/about-me";
 import FeatherIcon from "feather-icons-react";
+import Subheadline from "../atoms/Subheadline";
 
 class AboutMe extends React.Component {
   constructor(props){
@@ -25,8 +26,8 @@ class AboutMe extends React.Component {
         <div className="container">
           <div className="row no-gutters flex-column flex-md-row-reverse border-radius">
             <div className="col d-flex align-items-start justify-content-center flex-column">
-              <div className="text-section">A BIT ABOUT ME</div>
-              <h2 className="mb-3 text-highlight">{ this.state.name } <span role='img' aria-label='waving'>&#128075;</span></h2>
+              <div class="mb-3 text-section">A bit about me</div>
+              <h2 class="mb-3 text-highlight">I'm Robertson Morales</h2>
 
               { this.renderAboutMe() }
   
@@ -36,6 +37,7 @@ class AboutMe extends React.Component {
                 <a
                   className="btn btn-outline-primary btn-download-resume"
                   target="_blank"
+                  rel='noopener noreferrer'
                   href={ this.state.resume }
                 >
                   {/* href="resources/attachment/resume.pdf" */}

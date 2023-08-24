@@ -15,8 +15,8 @@ export default function Services () {
     <section id="services" className="py-5">
       <div className="container">
         <Subheadline 
-          section="SERVICES"
-          label="What I Offer" />
+          section="Services"
+          label="Taking your ideas <br> from concept to reality" />
 
         <div className="card-deck my-5">{ renderServices }</div>
       </div>
