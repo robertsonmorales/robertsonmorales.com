@@ -10,7 +10,7 @@ class Header extends React.Component {
         return (
             <header>
                 <nav
-                    className="navbar navbar-expand-md navbar-light mobile-bg-white fixed-top"
+                    className="navbar navbar-expand-md navbar-light mobile-bg-white fixed-top glassmorphism"
                     id="navbar"
                 >
                     <div className="container from-nav mx-3 mx-md-auto">

@@ -29,8 +29,10 @@ class SkillsAndExpertise extends React.Component {
             section="Skills & Expertise"
             label="What I can do" />
 
-          <div className="skill-gallery">
-            { this.renderSkills() }
+          <div className="flexbox-center">
+            <div className="skill-gallery">
+              { this.renderSkills() }
+            </div>
           </div>
         </div>
       </section>

@@ -2,7 +2,6 @@ import React from 'react';
 
 import MyProfile from "../../data/about-me";
 import FeatherIcon from "feather-icons-react";
-import Subheadline from "../atoms/Subheadline";
 
 class AboutMe extends React.Component {
   constructor(props){

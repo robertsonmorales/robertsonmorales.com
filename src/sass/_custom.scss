@@ -194,8 +194,9 @@
 
 // * Skills
 .skill-gallery{
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
+    @extend .flexbox-center;
+    flex-wrap: wrap;
+    width: 90%;
 
     .skill-img-wrapper {
         .skill-img{
