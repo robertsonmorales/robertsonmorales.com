@@ -48,15 +48,15 @@ class AboutMe extends React.Component {
             </div>
             <div className="col-1"></div>
             <div className="col">
-              <div className="bg-light about-radius">
+              <div className="about-radius">
                 <div className="mb-3 mb-md-0">
                   <div className="flexbox-center overflow-hidden">
                     <img
-                      className="img-drop-shadow"
+                      className="img-fluid"
                       src={this.state.profile}
-                      width="462"
-                      height="475"
-                      alt="Avatar"
+                      width="500"
+                      height="500"
+                      alt="Robertson Morales"
                       id='avatar'
                     />
                   </div>
