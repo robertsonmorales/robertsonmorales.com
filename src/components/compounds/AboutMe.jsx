@@ -21,12 +21,12 @@ class AboutMe extends React.Component {
 
   render() {
     return (
-      <section id="about-me" className="py-5">
+      <section id="aboutme" className="py-5">
         <div className="container">
           <div className="row no-gutters flex-column flex-md-row-reverse border-radius">
             <div className="col d-flex align-items-start justify-content-center flex-column">
-              <div class="mb-3 text-section">A bit about me</div>
-              <h2 class="mb-3 text-highlight">I'm Robertson Morales</h2>
+              <div className="mb-3 text-section">A bit about me</div>
+              <h2 className="mb-3 text-highlight">I'm Robertson Morales</h2>
 
               { this.renderAboutMe() }
   
@@ -58,6 +58,7 @@ class AboutMe extends React.Component {
                       width="462"
                       height="475"
                       alt="Avatar"
+                      id='avatar'
                     />
                   </div>
                 </div>

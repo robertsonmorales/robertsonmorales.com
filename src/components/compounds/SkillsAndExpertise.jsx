@@ -5,8 +5,8 @@ import Skills from "../../data/skills";
 
 class SkillsAndExpertise extends React.Component {
   renderSkills() {
-    return Skills.map(skill => (
-      <div className="skill-img-wrapper">
+    return Skills.map((skill, index) => (
+      <div className="skill-img-wrapper" key={ index }>
         <img
           key={skill.name}
           src={skill.image}

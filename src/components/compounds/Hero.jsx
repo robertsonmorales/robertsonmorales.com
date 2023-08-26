@@ -1,18 +1,12 @@
 import React from "react";
 
-import Button  from '../atoms/Button';
+import ButtonNavigation  from '../atoms/ButtonNavigation';
 
 class Hero extends React.Component {
-    constructor(props) {
-        super(props);
-
-        this.navigateTo = this.navigateTo.bind(this);
-    }
-
-    navigateTo(){
-        alert('nav')
-    }
-
+    // constructor(props) {
+    //     super(props);
+    // }
+    
     render(){
         return (
             <section id="hero" className="screen-height">
@@ -26,18 +20,16 @@ class Hero extends React.Component {
                             <h5 className="h5 text-muted font-weight-normal mb-3 mb-md-4" id="specialize">Unleashing Business Potential in the Digital Era through Web Development & Design</h5>
         
                             <div className="call-to-actions">
-                                <Button selector="btn btn-primary mb-1 mb-md-0 mr-2 mobile-w-100"
-                                    id="btn-my-services"
+                                <ButtonNavigation selector="btn btn-primary mb-1 mb-md-0 mr-2 mobile-w-100"
+                                    id="nav-services"
                                     text="My Services"
-                                    onClick={ () => this.navigateTo }
                                 />
         
                                 <div className="d-block d-md-none w-100"></div>
 
-                                <Button selector="btn btn-outline-primary mobile-w-100"
-                                    id="btn-my-works"
+                                <ButtonNavigation selector="btn btn-outline-primary mobile-w-100"
+                                    id="nav-works"
                                     text="See My Work &#8594;"
-                                    onClick={ () => this.navigateTo }
                                 />
                             </div>
                         </div>

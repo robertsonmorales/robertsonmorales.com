@@ -21,15 +21,16 @@ body{
     background-color: $body-bg;   
     color: $dark;
     font: $font-size $font-stack;
+    position: relative;
 }
 
 @import 'overwrite';
 @import 'custom';
 @import 'breakpoint';
 
-img{
+img:not(#avatar){
     filter: saturate(0.4);
-    transition: filter .4s ease-in-out;
+    transition: all .4s ease-in-out;
 
     &:hover {
         filter: saturate(1);

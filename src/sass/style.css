@@ -9382,6 +9382,7 @@ body {
   background-color: #fafafa;
   color: #222;
   font: 16px "GT Walsheim Regular", "Poppins", sans-serif;
+  position: relative;
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6,
@@ -9988,10 +9989,10 @@ lottie-player {
     letter-spacing: -2px;
   }
 }
-img {
+img:not(#avatar) {
   filter: saturate(0.4);
-  transition: filter 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
-img:hover {
+img:not(#avatar):hover {
   filter: saturate(1);
 }/*# sourceMappingURL=style.css.map */
