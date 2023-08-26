@@ -30,7 +30,7 @@ function Header() {
                         <div className="navbar-text">
                             <ul className="navbar-nav mr-auto mt-2 mt-lg-0 gap-y-base">
                                 <li className="nav-item">
-                                    <ButtonNavigation selector="nav-link navbar"
+                                    <ButtonNavigation selector="nav-link navbar active"
                                         id="nav-hero"
                                         text="Home"
                                     />
