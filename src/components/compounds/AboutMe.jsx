@@ -39,7 +39,6 @@ class AboutMe extends React.Component {
                   rel='noopener noreferrer'
                   href={ this.state.resume }
                 >
-                  {/* href="resources/attachment/resume.pdf" */}
                   <div className="d-flex align-items-center">
                     <span className="mr-2">View Resume</span>
                     <FeatherIcon icon="external-link" className="font-size-sm" />
