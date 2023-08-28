@@ -1,4 +1,4 @@
-import Profile from "../images/me/me.webp";
+import Profile from "../images/me/me-primary.webp";
 
 const myProfile = {
     profile: Profile,

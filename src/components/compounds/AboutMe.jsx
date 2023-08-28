@@ -58,6 +58,7 @@ class AboutMe extends React.Component {
                       height="500"
                       alt="Robertson Morales"
                       id='avatar'
+                      loading='lazy'
                     />
                   </div>
                 </div>
