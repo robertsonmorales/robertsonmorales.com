@@ -25,8 +25,8 @@ class AboutMe extends React.Component {
         <div className="container">
           <div className="row no-gutters flex-column flex-md-row-reverse border-radius">
             <div className="col d-flex align-items-start justify-content-center flex-column">
-              <div className="mb-3 text-section">A bit about me</div>
-              <h2 className="mb-3 text-highlight">I'm Robertson Morales</h2>
+              {/* <div className="mb-3 text-section">A bit about me</div> */}
+              <h1 className="mb-3 text-highlight">A bit about me</h1>
 
               { this.renderAboutMe() }
   

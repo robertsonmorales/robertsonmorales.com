@@ -22,7 +22,7 @@ const myWorks = [
         description: "Renobuild Construction Services is a trusted provider of comprehensive construction solutions. With a commitment to excellence, we specialize in a wide range of construction services, including renovations, remodeling, and new construction projects.",
         link: "https://dribbble.com/shots/21817669-Renobuild-Construction-Services-Web-Design",
         image: RenobuildImage,
-        button_text: "View More",
+        button_text: "View on Dribbble",
         show_button: true
     },
     {
@@ -38,7 +38,7 @@ const myWorks = [
         description: "Introducing QuickPOS, the advanced point-of-sale solution that revolutionizes your business with effortless transactions, streamlined operations, comprehensive inventory management, insightful sales analytics, and exceptional customer engagement. Experience the power of QuickPOS to propel your business forward.",
         link: "https://dribbble.com/shots/21636574-QuickPOS-Point-Of-Sale-Platform",
         image: QuickPOSImage,
-        button_text: "View More",
+        button_text: "View on Dribbble",
         show_button: true
     },
     {
@@ -54,7 +54,7 @@ const myWorks = [
         description: "Welcome to Careerspace, the ultimate destination for job seekers and employers alike. At Careerspace, employers can effortlessly post job availabilities and connect with talented individuals who are eager to kick-start their careers.",
         link: "https://dribbble.com/shots/20691887-Careerspace-Job-Posting-Platform",
         image: CareerSpaceImage,
-        button_text: "View More",
+        button_text: "View on Dribbble",
         show_button: true
     },
     {
@@ -70,7 +70,7 @@ const myWorks = [
         description: "Travelbuddy is a hotel booking platform that offers a variety of accommodations with 24/7 support. Whether you're looking for a luxurious hotel or a budget-friendly hostel, Travelbuddy has something for everyone. With our easy-to-use search engine, you can find the perfect place to stay in any destination. And with our 24/7 support, you can always get help if you need it.",
         link: "https://dribbble.com/shots/20628703-Travelbuddy-Online-Hotel-Booking-Platform",
         image: TravelBuddyImage,
-        button_text: "View More",
+        button_text: "View on Dribbble",
         show_button: true
     },
     {
@@ -89,7 +89,7 @@ const myWorks = [
         description: "Mobile online banking is a way to access your bank accounts and do your banking on the go. You can use your smartphone or tablet to view account balances, transfer funds, pay bills, and even deposit checks.",
         link: "https://dribbble.com/shots/20602030-Online-Banking-Mobile-App",
         image: MobileBankingImage,
-        button_text: "View More",
+        button_text: "View on Dribbble",
         show_button: true
     },
     {
