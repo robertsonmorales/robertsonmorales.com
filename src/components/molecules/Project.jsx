@@ -32,7 +32,7 @@ class Project extends React.Component {
                 <div className="work-action">
                     <a href={ this.state.details.link } 
                         target="_blank"
-                        title="View More" 
+                        title={ this.state.details.button_text }
                         rel="noopener noreferrer" 
                         className="btn btn-primary mobile-w-100">
                         <div className="d-flex align-items-center">

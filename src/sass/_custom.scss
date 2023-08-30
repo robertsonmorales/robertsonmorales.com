@@ -39,7 +39,6 @@
 /* FONT */
 .font-weight-500{
     font-weight: 500;
-    font-family: $font-medium;
 }
 
 .font-weight-600{
@@ -95,6 +94,7 @@
 
         .card-text{
             color: $text-muted;
+            line-height: 1.5;
         }
     }
 
@@ -137,12 +137,15 @@
 }
 
 .text-section{
-    font-weight: bold;
     color: $primary;
+    text-transform: uppercase;
+
+    @extend .mb-2, .font-weight-600;
 }
 
 .text-highlight{
-    @extend .font-stack-1;    
+    @extend .font-stack-1;
+    letter-spacing: -0.025em;
 }
 
 .flexbox-works{
@@ -185,6 +188,7 @@
 
 .work-description{
     color: $text-muted;
+    line-height: 1.5;
 }
 
 .work-action{
@@ -311,7 +315,6 @@
 
 .font-stack-1{
     font-family: $font-stack-1 !important;
-    letter-spacing: .4px;
 }
 
 .border-top-left-radius{
@@ -511,7 +514,7 @@
 
 .glassmorphism{
     backdrop-filter: blur(16px) saturate(180%);
-    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(32px) saturate(180%);
     background-color: rgba(255, 255, 255, 0.75);
     // border-radius: 12px;
     // border: 1px solid rgba(209, 213, 219, 0.3);

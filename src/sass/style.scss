@@ -25,12 +25,3 @@ body{
 @import 'overwrite';
 @import 'custom';
 @import 'breakpoint';
-
-img:not(#avatar){
-    filter: saturate(0.4);
-    transition: all .4s ease-in-out;
-
-    &:hover {
-        filter: saturate(1);
-    }
-}

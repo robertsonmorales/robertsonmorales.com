@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* devanagari */
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 @font-face {
   font-family: "Poppins";
   font-style: normal;
@@ -7294,7 +7294,7 @@ button.bg-dark:focus {
   margin-right: 0.5rem !important;
 }
 
-.mb-2,
+.mb-2, .text-section,
 .my-2 {
   margin-bottom: 0.5rem !important;
 }
@@ -7461,7 +7461,8 @@ button.bg-dark:focus {
 }
 
 .pt-3,
-.py-3 {
+.py-3,
+.btn {
   padding-top: 1rem !important;
 }
 
@@ -7471,7 +7472,8 @@ button.bg-dark:focus {
 }
 
 .pb-3,
-.py-3 {
+.py-3,
+.btn {
   padding-bottom: 1rem !important;
 }
 
@@ -7490,7 +7492,8 @@ button.bg-dark:focus {
 }
 
 .pr-4,
-.px-4 {
+.px-4,
+.btn {
   padding-right: 1.5rem !important;
 }
 
@@ -7500,7 +7503,8 @@ button.bg-dark:focus {
 }
 
 .pl-4,
-.px-4 {
+.px-4,
+.btn {
   padding-left: 1.5rem !important;
 }
 
@@ -9168,7 +9172,7 @@ button.bg-dark:focus {
   font-weight: 700 !important;
 }
 
-.font-weight-bolder, .display-3 {
+.font-weight-bolder {
   font-weight: bolder !important;
 }
 
@@ -9381,7 +9385,7 @@ html {
 body {
   background-color: #fafafa;
   color: #222;
-  font: 16px "GT Walsheim Regular", "Poppins", sans-serif;
+  font: 16px "Inter", "Poppins", sans-serif;
   position: relative;
 }
 
@@ -9395,10 +9399,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .display-3 {
-  font-size: clamp(2.4rem, 6vw, 4rem);
-  line-height: 1.1;
-  letter-spacing: 1px;
-  text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+  font-size: clamp(2.4rem, 64px, 64px);
 }
 
 #intro .font-stack-1, #intro .work-title, #intro .text-highlight, #intro .card.card-service .card-body .card-title, .card.card-service .card-body #intro .card-title {
@@ -9410,11 +9411,11 @@ h1, h2, h3, h4, h5, h6 {
   bottom: -4px;
 }
 #intro code {
-  font-family: "GT Walsheim Regular", "Poppins", sans-serif;
+  font-family: "Inter", "Poppins", sans-serif;
 }
 
 .rounded {
-  border-radius: 10px !important;
+  border-radius: 32px !important;
 }
 
 .rounded-top {
@@ -9439,7 +9440,7 @@ h1, h2, h3, h4, h5, h6 {
   outline: none;
   border: none;
   background-color: transparent;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   color: #222;
 }
@@ -9450,15 +9451,14 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
   font-weight: 600;
   color: #6440ff !important;
-  transform: scale(1.05);
   transition: font-weight 0.1s linear;
 }
 
 .btn {
-  border-radius: 10px !important;
-  padding: 10px 20px;
+  border-radius: 32px !important;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 .btn .feather {
   width: 16px;
@@ -9478,7 +9478,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: transparent;
 }
 
-.font-weight-bolder, .display-3 {
+.font-weight-bolder {
   font-weight: 800 !important;
 }
 
@@ -9492,7 +9492,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .input-group .form-control {
   width: 100%;
-  border-radius: 10px !important;
+  border-radius: 8px !important;
 }
 .input-group .form-control:focus {
   font-weight: 500;
@@ -9583,10 +9583,9 @@ h1, h2, h3, h4, h5, h6 {
 /* FONT */
 .font-weight-500 {
   font-weight: 500;
-  font-family: "GT Walsheim Medium", sans-serif;
 }
 
-.font-weight-600 {
+.font-weight-600, .text-section, .display-3 {
   font-weight: 600;
 }
 
@@ -9628,6 +9627,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .card.card-service .card-body .card-text {
   color: #626970;
+  line-height: 1.5;
 }
 .card.card-service:hover {
   color: #fff;
@@ -9662,8 +9662,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .text-section {
-  font-weight: bold;
   color: #6440ff;
+  text-transform: uppercase;
+}
+
+.text-highlight {
+  letter-spacing: -0.025em;
 }
 
 .flexbox-works {
@@ -9692,6 +9696,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .work-description {
   color: #626970;
+  line-height: 1.5;
 }
 
 .skill-gallery {
@@ -9748,7 +9753,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .border-radius, .contact-card, .contact-radius {
-  border-radius: 10px;
+  border-radius: 32px;
 }
 
 .placeholder {
@@ -9760,8 +9765,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .font-stack-1, .card.card-service .card-body .card-title, .text-highlight, .work-title {
-  font-family: "DM Serif Display", sans-serif !important;
-  letter-spacing: 0.4px;
+  font-family: "Inter", sans-serif !important;
 }
 
 .border-top-left-radius {
@@ -9911,7 +9915,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .glassmorphism, .card {
   backdrop-filter: blur(16px) saturate(180%);
-  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(32px) saturate(180%);
   background-color: rgba(255, 255, 255, 0.75);
 }
 
@@ -9988,11 +9992,4 @@ lottie-player {
   .h1 {
     letter-spacing: -2px;
   }
-}
-img:not(#avatar) {
-  filter: saturate(0.4);
-  transition: all 0.4s ease-in-out;
-}
-img:not(#avatar):hover {
-  filter: saturate(1);
 }/*# sourceMappingURL=style.css.map */

@@ -9,12 +9,9 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .display-3{
-    font-size: clamp(2.4rem, 6vw, 4rem);;
-    line-height: 1.1;
-    letter-spacing: 1px;
-    text-shadow: 0px 3px 3px rgba(0,0,0,0.1);
+    font-size: clamp(2.4rem, 64px, 64px);
 
-    @extend .font-weight-bolder;
+    @extend .font-weight-600;
 }
 
 #intro{
@@ -71,7 +68,7 @@ h1, h2, h3, h4, h5, h6{
         outline: none;
         border: none;
         background-color: transparent;
-        font-size: $font-size;
+        font-size: $font-size-sm;
         font-weight: 600;
         color: $dark;
 
@@ -84,7 +81,6 @@ h1, h2, h3, h4, h5, h6{
 .navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active{
     font-weight: 600;
     color: $primary !important;
-    transform: scale(1.05);
     transition: font-weight .1s linear;
 }
 // ENDS HERE
@@ -92,9 +88,11 @@ h1, h2, h3, h4, h5, h6{
 // BUTTONS
 .btn{
     border-radius: $radius !important;
-    padding: 10px 20px;
     font-weight: 500;
-    font-size: $font-size;
+    font-size: $font-size-sm;
+    text-transform: uppercase;
+
+    @extend .py-3, .px-4;
 
     .feather{
         width: 16px;
@@ -147,7 +145,7 @@ h1, h2, h3, h4, h5, h6{
 
     .form-control{
         width: 100%;
-        border-radius: $radius !important;
+        border-radius: $input-radius !important;
 
         &:focus{
             font-weight: 500;
