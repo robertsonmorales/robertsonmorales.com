@@ -4,7 +4,7 @@ import ButtonNavigation from './atoms/ButtonNavigation';
 
 function Header() {
     return (
-        <header className='sticky-top glassmorphism'>
+        <header className='fixed-top glassmorphism'>
             <nav
                 className="navbar navbar-expand-md navbar-light mobile-bg-white"
                 id="navbar"

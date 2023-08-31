@@ -9,8 +9,9 @@ function Hero() {
             <div className="row no-gutters container">
                 <div className="col flexbox-center flex-column">
                     <div className="text-left">
-                        <p className="h5 font-weight-500 text-muted" id="specialize">Hi, I'm Robertson Morales 👋</p>
-                        <h1 className="display-3 font-stack-1 mb-3 mb-md-4" id="intro">Web design and development for business growth.</h1>
+                        <p className="h6 font-weight-normal">Hi, I'm Robertson Morales 👋</p>
+                        <h1 className="display-3 font-stack-1 mb-3">A web developer and designer</h1>
+                        <p className="h5 font-weight-normal mb-3 mb-md-4">Unlocking small and medium business potential through digital transformation.</p>
     
                         <div className="call-to-actions">
                             <ButtonNavigation selector="btn btn-primary mb-1 mb-md-0 mr-2 mobile-w-100"

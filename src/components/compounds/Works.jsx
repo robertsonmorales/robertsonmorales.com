@@ -29,7 +29,7 @@ function Works() {
                     <Button 
                         id="view-more-projects"
                         selector="btn btn-outline-primary"
-                        text="View More Projects"
+                        text="More Projects &#8594;"
                         action={ viewMoreProjects }
                     />
                 </div>

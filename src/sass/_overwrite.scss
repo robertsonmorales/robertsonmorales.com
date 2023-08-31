@@ -8,10 +8,19 @@ h1, h2, h3, h4, h5, h6{
     font-size: clamp(1.8rem, 6vw, 4rem);
 }
 
+.h4, h4{
+    line-height: 1.3;
+}
+
+.h5, h5{
+    line-height: 1.5;
+    letter-spacing: .015em;
+}
+
 .display-3{
     font-size: clamp(2.4rem, 64px, 64px);
 
-    @extend .font-weight-600;
+    @extend .font-weight-bold;
 }
 
 #intro{
