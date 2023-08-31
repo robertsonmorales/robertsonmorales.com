@@ -9385,7 +9385,7 @@ html {
 body {
   background-color: #fafafa;
   color: #222;
-  font: 16px "Inter", "Poppins", sans-serif;
+  font: 16px "Poppins", sans-serif;
   position: relative;
 }
 
@@ -9421,7 +9421,7 @@ h1, h2, h3, h4, h5, h6 {
   bottom: -4px;
 }
 #intro code {
-  font-family: "Inter", "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .rounded {
@@ -9785,7 +9785,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .font-stack-1, .card.card-service .card-body .card-title, .text-highlight, .work-title {
-  font-family: "Inter", sans-serif !important;
+  font-family: "Poppins", sans-serif !important;
 }
 
 .border-top-left-radius {
