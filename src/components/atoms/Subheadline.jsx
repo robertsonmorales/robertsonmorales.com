@@ -4,7 +4,11 @@ function Subheadline({ section, label }) {
 
     return (
         <div className="text-center mb-4">
-            <div className="text-section">{ section }</div>
+            <div className="text-section">
+                <div className="borders"></div>
+                <span>{ section }</span>
+                <div className="borders"></div>
+            </div>
             <h1 className="text-highlight" dangerouslySetInnerHTML={{ __html: label }} />
         </div>
     );  

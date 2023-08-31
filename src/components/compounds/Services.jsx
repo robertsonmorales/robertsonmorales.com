@@ -16,7 +16,7 @@ export default function Services () {
       <div className="container">
         <Subheadline 
           section="Services"
-          label="Taking your ideas <br> from concept to reality" />
+          label="The array of solutions <br /> I offer for your business" />
 
         <div className="card-deck my-5">{ renderServices }</div>
       </div>

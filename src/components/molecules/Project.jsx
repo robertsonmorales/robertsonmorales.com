@@ -50,7 +50,7 @@ class Project extends React.Component {
             <div className={ this.renderLayout() }>
                 <div className="col-md-5">
                     <div className="d-flex flex-column gap-x-sm">
-                        <h3 className="work-title mb-0">{  this.state.details.title }</h3>
+                        <h3 className="work-title mb-0 w-75">{  this.state.details.title }</h3>
         
                         <ul className="built-with">{ this.renderBuiltWith() }</ul>
         
