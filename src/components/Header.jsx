@@ -12,7 +12,7 @@ function Header() {
                 <div className="container from-nav mx-3 mx-md-auto">
                     <a href="/"
                         className="navbar-brand border-0 bg-transparent outline-none" >
-                        <div className="h5 mb-0 font-weight-500 font-stack-1">RM</div>
+                        <div className="h5 mb-0 font-weight-600 font-stack-1">Robertson Morales</div>
                     </a>
                     <button
                         className="navbar-toggler border-0 outline-none"
