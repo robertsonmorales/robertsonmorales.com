@@ -7,6 +7,14 @@ import MyServices from "../../data/services";
 
 function ContactForm() {
     const formURL = "https://submit-form.com/jB4EPKoR";
+    const {
+        register,
+        handleSubmit,
+        watch, 
+        formState: { errors }
+    } = useForm();
+
+    
     const socialMediaLinks = SocialMediaLinks.map((media, index) => {
         return (
           <a

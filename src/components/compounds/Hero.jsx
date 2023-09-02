@@ -9,7 +9,7 @@ function Hero() {
             <div className="row no-gutters container">
                 <div className="col flexbox-center flex-column">
                     <div className="text-left">
-                        <h1 className="display-3 font-stack-1 mb-3">Your rockstar <br />web developer <br />and <i className="text-primary">designer</i>.</h1>
+                        <h1 className="display-3 font-stack-1 mb-3">Your Rockstar <br />Web Developer <br />and <em className="text-primary">Designer</em>.</h1>
                         <p className="h5 font-weight-normal mb-3 mb-md-4">Unlocking small and medium business potential through digital transformation.</p>
     
                         <div className="call-to-actions">

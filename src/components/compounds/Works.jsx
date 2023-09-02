@@ -1,20 +1,16 @@
 import React from "react";
 
 import Subheadline from "../atoms/Subheadline";
-import Button from "../atoms/Button";
 import Project from "../molecules/Project";
 import MyWorks from "../../data/works";
+import { Link } from "react-router-dom";
 
 function Works() {
     const renderWorks = MyWorks.map((work, index) => {
         return (
-            <Project details={work} key={ index } />
+            <Project details={ work } key={ index } />
         );
-    })
-
-    const viewMoreProjects = () => {
-        alert('view more projects')
-    }
+    });
 
     return (
         <section id="works" className="py-5">
@@ -25,14 +21,12 @@ function Works() {
 
                 { renderWorks }
     
-                <div className="text-center mt-5">
-                    <Button 
+                {/* <div className="text-center mt-5">
+                    <Link to="/projects" 
                         id="view-more-projects"
-                        selector="btn btn-outline-primary"
-                        text="More Projects &#8594;"
-                        action={ viewMoreProjects }
-                    />
-                </div>
+                        className="btn btn-outline-primary"
+                    >More Projects &#8594;</Link>
+                </div> */}
     
             </div>
         </section>
