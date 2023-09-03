@@ -6,11 +6,11 @@ import Profile from "../../images/me/me-saturated.webp";
 function Hero() {
     return (
         <section id="hero" className="screen-height">
-            <div className="row no-gutters container">
-                <div className="col flexbox-center flex-column">
-                    <div className="text-left">
-                        <h1 className="display-3 font-stack-1 mb-3">Your Rockstar <br />Web Developer <br />and <em className="text-primary">Designer</em>.</h1>
-                        <p className="h5 font-weight-normal mb-3 mb-md-4">Unlocking small and medium business potential through digital transformation.</p>
+            <div className="row no-gutters container flex-column-reverse flex-md-row">
+                <div className="col d-flex justify-content-center align-items-start flex-column">
+                    <div className="text-center text-md-left">
+                        <h1 className="mb-3">Your rockstar <br />web developer <br />and <span className="text-primary">designer</span>.</h1>
+                        <p className="mb-3 mb-md-4">Unlocking small and medium business potential <br />through digital transformation.</p>
     
                         <div className="call-to-actions">
                             <ButtonNavigation selector="btn btn-primary mb-1 mb-md-0 mr-2 mobile-w-100"
@@ -28,7 +28,7 @@ function Hero() {
                     </div>
                 </div>
                 <div className="col">
-                    <div className="hero-img-wrapper">
+                    <div className="mb-2 mb-md-0">
                         <img src={ Profile } alt="" className="img-fluid" />
                     </div>
                 </div>

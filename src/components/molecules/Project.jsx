@@ -35,7 +35,7 @@ class Project extends React.Component {
                         title={ this.state.details.button_text }
                         rel="noopener noreferrer" 
                         className="btn btn-primary mobile-w-100">
-                        <div className="d-flex align-items-center">
+                        <div className="flexbox-center">
                             <FeatherIcon icon="external-link" />
                             <span className="ml-2 mr-2">{ this.state.details.button_text }</span>
                         </div>
