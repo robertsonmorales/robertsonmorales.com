@@ -88,10 +88,6 @@
     }
 
     .card-body{
-        .card-title{
-            @extend .font-stack-1;
-        }
-
         .card-text{
             color: $text-muted;
             line-height: 1.5;
@@ -144,6 +140,10 @@
 
     @extend .mb-2, .font-weight-600;
 
+    .white-space-nowrap {
+        white-space: nowrap;
+    }
+    
     > .borders{
         width: 100%;
         height: 1.5px;
@@ -152,7 +152,6 @@
 }
 
 .text-highlight{
-    @extend .font-stack-1;
     letter-spacing: -0.025em;
 }
 
@@ -188,10 +187,6 @@
             transform: scale(1.05);
         }
     }
-}
-
-.work-title{
-    @extend .font-stack-1;
 }
 
 .work-description{
@@ -285,44 +280,8 @@
     border-radius: $radius;
 }
 
-.placeholder{
-    color: #f3f3f3;
-    font-size: 80px;
-    z-index: -1;
-    font-weight: 600;
-    pointer-events: none;
-}
-
-// .placeholder-1::before{
-//     content: "01";
-// }
-
-// .placeholder-2::before{
-//     content: "02";
-// }
-
-// .placeholder-3::before{
-//     content: "03";
-// }
-
-// .placeholder-4::before{
-//     content: "04";
-// }
-
-// .placeholder-5::before{
-//     content: "05";
-// }
-
-// .placeholder-6::before{
-//     content: "06";
-// }
-
-// .placeholder-7::before{
-//     content: "07";
-// }
-
-.font-stack-1{
-    font-family: $font-stack-1 !important;
+.inner-border-radius{
+    border-radius: $inner-radius;
 }
 
 .border-top-left-radius{
@@ -558,4 +517,16 @@ lottie-player{
     bottom: 30px;
     
     @extend .text-muted;
+}
+
+.custom-modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.2);
+    z-index: 9999;
+
+    -webkit-overflow-scrolling: none;
 }

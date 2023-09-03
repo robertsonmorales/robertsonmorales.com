@@ -101,15 +101,12 @@ const myWorks = [
         }, {
             id: 2,
             name: "figma"
-        }, {
-            id: 3,
-            name: "mobile-design"
         }],
         description: "The E-Commerce design website focuses on sportswear and apparel products for users. A vibrant and energetic color would be a good option for the website, as it would be user-friendly and help to create a positive and engaging experience for users.",
         link: "/503",
         image: EcommerceImage,
-        button_text: "View More",
-        show_button: false
+        button_text: "View Live",
+        show_button: true
     },
     {
         is_reversed: true,
