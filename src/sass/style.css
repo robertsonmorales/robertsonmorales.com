@@ -162,21 +162,6 @@
   src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLBT5Z1xlFQ.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-@font-face {
-  font-family: "GT Walsheim Bold";
-  src: url("../fonts/GTWalsheimBold.ttf") format("truetype");
-  font-weight: bold;
-}
-@font-face {
-  font-family: "GT Walsheim Medium";
-  src: url("../fonts/GTWalsheimPro-Medium.ttf") format("truetype");
-  font-weight: 500;
-}
-@font-face {
-  font-family: "GT Walsheim Regular";
-  src: url("../fonts/GTWalsheimProRegular.ttf") format("truetype");
-  font-weight: normal;
-}
 /*!
  * Bootstrap v4.5.3 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
@@ -9412,18 +9397,6 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.1;
 }
 
-#intro .font-stack-1, #intro .work-title, #intro .text-highlight, #intro .card.card-service .card-body .card-title, .card.card-service .card-body #intro .card-title {
-  position: relative;
-}
-#intro .font-stack-1 .feather, #intro .work-title .feather, #intro .text-highlight .feather, #intro .card.card-service .card-body .card-title .feather, .card.card-service .card-body #intro .card-title .feather {
-  position: absolute;
-  right: -29px;
-  bottom: -4px;
-}
-#intro code {
-  font-family: "Poppins", sans-serif;
-}
-
 .rounded {
   border-radius: 32px !important;
 }
@@ -9680,6 +9653,9 @@ h1, h2, h3, h4, h5, h6 {
   -moz-column-gap: 32px;
        column-gap: 32px;
 }
+.text-section .white-space-nowrap {
+  white-space: nowrap;
+}
 .text-section > .borders {
   width: 100%;
   height: 1.5px;
@@ -9776,16 +9752,8 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 32px;
 }
 
-.placeholder {
-  color: #f3f3f3;
-  font-size: 80px;
-  z-index: -1;
-  font-weight: 600;
-  pointer-events: none;
-}
-
-.font-stack-1, .card.card-service .card-body .card-title, .text-highlight, .work-title {
-  font-family: "Poppins", sans-serif !important;
+.inner-border-radius {
+  border-radius: 30px;
 }
 
 .border-top-left-radius {
@@ -9965,6 +9933,17 @@ lottie-player {
   height: 80px;
   position: absolute;
   bottom: 30px;
+}
+
+.custom-modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  -webkit-overflow-scrolling: none;
 }
 
 @media (max-width: 575.98px) {

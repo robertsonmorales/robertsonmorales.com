@@ -40,8 +40,8 @@ class AboutMe extends React.Component {
                   href={ this.state.resume }
                 >
                   <div className="d-flex align-items-center">
-                    <span className="mr-2">View Resume</span>
-                    <FeatherIcon icon="external-link" className="font-size-sm" />
+                    <FeatherIcon icon="external-link" />
+                    <span className="ml-2 mr-2">View Resume</span>
                   </div>
                 </a>
               </div>

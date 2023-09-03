@@ -6,7 +6,7 @@ function Subheadline({ section, label }) {
         <div className="text-center mb-4">
             <div className="text-section">
                 <div className="borders"></div>
-                <span>{ section }</span>
+                <span className="white-space-nowrap">{ section }</span>
                 <div className="borders"></div>
             </div>
             <h1 className="text-highlight" dangerouslySetInnerHTML={{ __html: label }} />
