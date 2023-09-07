@@ -1,11 +1,22 @@
-import React from 'react';
-
+import React, { useRef, useEffect } from "react";
+import { onScrollReveal } from "../../helper/scroll-reveal";
 import FeatherIcon from 'feather-icons-react';
 
 function Service({ details }) {
+    const cardRef = useRef(null);
+
+    useEffect(() => {
+        onScrollReveal('.card-service', {
+            delay: 300,
+            distance: '15%',
+            origin: 'bottom',
+            easing: 'ease',
+            interval: 100
+        });
+    });
+
     return (
-        <div className="card card-service mb-md-4" 
-            id={details.id} 
+        <div className="card card-service mb-md-4"
             key={details.id}>
             <div className="pt-4 pb-2 pt-lg-3 card-header">
                 <FeatherIcon icon={details.icon} />
