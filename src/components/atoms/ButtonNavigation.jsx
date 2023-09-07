@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
+import { onScrollReveal } from "../../helper/scroll-reveal";
 
 function ButtonNavigation({ id, selector, text }) {
+    
     const removeActiveClass = () => {
         let navs = document.querySelectorAll('.nav-link.navbar');
 
