@@ -6,6 +6,7 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "@vercel/analytics": "^1.0.2",
     "bootstrap": "^4.5.3",
     "feather-icons-react": "^0.6.2",
     "jquery": "^3.7.0",
@@ -21,7 +22,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "purgecss": "npx purgecss --css=./build/static/css/*.css --content=./build/index.html --output=./build/static/css/"
   },
   "eslintConfig": {
     "extends": [

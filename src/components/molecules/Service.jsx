@@ -1,10 +1,8 @@
-import React, { useRef, useEffect } from "react";
+import React, { useEffect } from "react";
 import { onScrollReveal } from "../../helper/scroll-reveal";
 import FeatherIcon from 'feather-icons-react';
 
 function Service({ details }) {
-    const cardRef = useRef(null);
-
     useEffect(() => {
         onScrollReveal('.card-service', {
             delay: 300,
