@@ -1,7 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import { onScrollReveal } from "../../helper/scroll-reveal";
 
-import ButtonNavigation  from '../atoms/ButtonNavigation';
 import Profile from "../../images/me/me-saturated.webp";
 
 function Hero() {
@@ -56,19 +55,15 @@ function Hero() {
                         <p className="mb-3 mb-md-4" ref={ subheadline }>Unlocking small and medium business potential <br />through digital transformation.</p>
     
                         <div className="call-to-actions">
-                            <ButtonNavigation 
-                                selector="btn btn-primary mb-1 mb-md-0 mr-2 mobile-w-100"
-                                id="nav-services"
-                                text="My Services"
-                            />
+                            <button type="button" 
+                                id="nav-services" 
+                                className="btn btn-primary mb-1 mb-md-0 mr-2 mobile-w-100">My Services</button>
     
                             <div className="d-block d-md-none w-100"></div>
 
-                            <ButtonNavigation 
-                                selector="btn btn-outline-primary mobile-w-100 ml-2"
-                                id="nav-works"
-                                text="See My Work &#8594;"
-                            />
+                            <button type="button" 
+                                id="nav-works" 
+                                className="btn btn-outline-primary mobile-w-100 ml-2">See My Work &#8594;</button>
                         </div>
                     </div>
                 </div>

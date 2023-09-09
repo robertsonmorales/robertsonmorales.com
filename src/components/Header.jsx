@@ -1,6 +1,5 @@
 import React, { useRef, useEffect } from 'react';
 import FeatherIcon from 'feather-icons-react';
-import ButtonNavigation from './atoms/ButtonNavigation';
 
 function Header() {
     const navbar = useRef(null);
@@ -10,7 +9,28 @@ function Header() {
             navbar.current.classList.toggle('border-bottom', window.scrollY > navbar.current.offsetHeight);
             navbar.current.classList.toggle('glassmorphism', window.scrollY > navbar.current.offsetHeight);
         });
-    }, []);
+    });
+
+    const removeActiveClass = () => {
+        let navs = document.querySelectorAll('.nav-link.navbar');
+
+        navs.forEach(nav => {
+            document.getElementById(nav.id).classList.remove('active');
+        });
+    }
+
+    const triggerClick = (id) => {
+        removeActiveClass(); // remove .active class
+
+        let el = document.getElementById(id);
+        if (id === 'hero') {
+            document.getElementById('nav-hero').classList.add('active');
+            window.scrollTo(0,0);
+        }else{
+            document.getElementById(`nav-${id}`).classList.add('active');
+            el.scrollIntoView();
+        }
+    }
 
     return (
         <header className='fixed-top'>
@@ -43,28 +63,28 @@ function Header() {
                         <div className="navbar-text">
                             <ul className="navbar-nav mr-auto mt-2 mt-lg-0 gap-y-base">
                                 <li className="nav-item">
-                                    <ButtonNavigation selector="nav-link navbar active"
-                                        id="nav-hero"
-                                        text="Home"
-                                    />
+                                    <button type="button" 
+                                        id="nav-hero" 
+                                        className="nav-link navbar active" 
+                                        onClick={ () => triggerClick('hero') }>Home</button>
                                 </li>
                                 <li className="nav-item">
-                                    <ButtonNavigation selector="nav-link navbar"
-                                        id="nav-services"
-                                        text="Services"
-                                    />
+                                    <button type="button" 
+                                        id="nav-services" 
+                                        className="nav-link navbar" 
+                                        onClick={ () => triggerClick('services') }>Services</button>
                                 </li>
                                 <li className="nav-item">
-                                    <ButtonNavigation selector="nav-link navbar"
-                                        id="nav-works"
-                                        text="Work"
-                                    />
+                                    <button type="button" 
+                                        id="nav-works" 
+                                        className="nav-link navbar" 
+                                        onClick={ () => triggerClick('works') }>Work</button>
                                 </li>
                                 <li className="nav-item">
-                                    <ButtonNavigation selector="nav-link navbar"
-                                        id="nav-aboutme"
-                                        text="About Me"
-                                    />
+                                    <button type="button" 
+                                        id="nav-aboutme" 
+                                        className="nav-link navbar" 
+                                        onClick={ () => triggerClick('aboutme') }>About Me</button>
                                 </li>
                                 <li className="nav-item">
                                     <a href="https://drive.google.com/file/d/1-vFOfIOTjQcMeo3F4vxntRpN2mp65MqT/view?usp=sharing"
@@ -74,20 +94,20 @@ function Header() {
                                         id="nav-download"
                                     >
                                         <span className="mr-2">Resume</span>
-                                        <FeatherIcon icon="external-link" size="{28}"></FeatherIcon>
+                                        <FeatherIcon icon="external-link"></FeatherIcon>
                                     </a>
                                 </li>
                                 <li className="nav-item">
-                                    <ButtonNavigation selector="nav-link navbar"
-                                        id="nav-testimonials"
-                                        text="Testimonials"
-                                    />
+                                    <button type="button" 
+                                        id="nav-testimonials" 
+                                        className="nav-link navbar" 
+                                        onClick={ () => triggerClick('testimonials') }>Testimonials</button>
                                 </li>
                                 <li className="nav-item">
-                                    <ButtonNavigation selector="nav-link navbar"
-                                        id="nav-contact"
-                                        text="Contacts"
-                                    />
+                                    <button type="button" 
+                                        id="nav-contact" 
+                                        className="nav-link navbar" 
+                                        onClick={ () => triggerClick('contact') }>Contacts</button>
                                 </li>
                             </ul>
                         </div>
