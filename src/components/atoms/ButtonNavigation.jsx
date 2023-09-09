@@ -1,5 +1,4 @@
-import React, { useRef, useEffect } from "react";
-import { onScrollReveal } from "../../helper/scroll-reveal";
+import React from "react";
 
 function ButtonNavigation({ id, selector, text }) {
     

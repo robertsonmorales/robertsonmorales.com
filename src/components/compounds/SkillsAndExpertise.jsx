@@ -1,10 +1,22 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import Subheadline from "../atoms/Subheadline";
 import Skills from "../../data/skills";
+import { onScrollReveal } from '../../helper/scroll-reveal';
 
-class SkillsAndExpertise extends React.Component {
-  renderSkills() {
+function SkillsAndExpertise () {
+
+  useEffect(() => {
+    onScrollReveal('.skill-gallery img', {
+      delay: 300,
+      distance: '5%',
+      origin: 'left',
+      easing: 'ease',
+      interval: 50
+    });
+  });
+
+  const renderSkills = () =>{
     return Skills.map((skill, index) => (
       <div className="skill-img-wrapper" key={ index }>
         <img
@@ -21,23 +33,21 @@ class SkillsAndExpertise extends React.Component {
     ));
   }
 
-  render() {
-    return (
-      <section id="skills" className="py-5 py-md-0 screen-height bg-light">
-        <div className="container text-center">
-          <Subheadline 
-            section="Skills & Expertise"
-            label="What I can do" />
+  return (
+    <section id="skills" className="py-5 py-md-0 screen-height bg-light">
+      <div className="container text-center">
+        <Subheadline 
+          section="Skills & Expertise"
+          label="What I can do" />
 
-          <div className="flexbox-center">
-            <div className="skill-gallery">
-              { this.renderSkills() }
-            </div>
+        <div className="flexbox-center">
+          <div className="skill-gallery">
+            { renderSkills() }
           </div>
         </div>
-      </section>
-    );
-  }
+      </div>
+    </section>
+  );
 }
 
 export default SkillsAndExpertise;

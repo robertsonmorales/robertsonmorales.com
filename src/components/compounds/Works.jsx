@@ -3,7 +3,6 @@ import React from "react";
 import Subheadline from "../atoms/Subheadline";
 import Project from "../molecules/Project";
 import MyWorks from "../../data/works";
-import { Link } from "react-router-dom";
 
 function Works() {
     const renderWorks = MyWorks.map((work, index) => {

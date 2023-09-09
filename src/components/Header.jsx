@@ -1,13 +1,23 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import FeatherIcon from 'feather-icons-react';
 import ButtonNavigation from './atoms/ButtonNavigation';
 
 function Header() {
+    const navbar = useRef(null);
+
+    useEffect(() => {
+        window.addEventListener('scroll', () => {
+            navbar.current.classList.toggle('border-bottom', window.scrollY > navbar.current.offsetHeight);
+            navbar.current.classList.toggle('glassmorphism', window.scrollY > navbar.current.offsetHeight);
+        });
+    }, []);
+
     return (
-        <header className='fixed-top glassmorphism'>
+        <header className='fixed-top'>
             <nav
-                className="navbar navbar-expand-md navbar-light shadow-sm"
+                className="navbar navbar-expand-md navbar-light"
                 id="navbar"
+                ref={ navbar }
             >
                 <div className="container from-nav mx-3 mx-md-auto">
                     <a href="/"

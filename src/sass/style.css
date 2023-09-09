@@ -9466,7 +9466,7 @@ h1, .h1 {
 .badge {
   color: #6440ff;
   font-weight: normal;
-  font-size: 0.875rem;
+  font-size: 14px;
   border: 0.0625rem solid rgba(231, 234, 243, 0.7);
   border-radius: 20px;
 }
