@@ -44,9 +44,9 @@ const myServices = [
     {
       id: 'seo-performance',
       icon: 'search',
-      title: 'SEO Performance',
+      title: 'Search Engine Optimization',
       description: `Let's optimize your web page's quality content and technical configuration to make it easy to find or appear on the search engine results page.`,
-      route: '/seo-performance'
+  route: '/seo'
     },
     {
       id: 'database-design',

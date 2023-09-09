@@ -1,4 +1,5 @@
 import React from 'react';
+import { inject } from "@vercel/analytics"; // for vercel web analytics
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import DefaultLayout from './components/layouts/Default';
@@ -8,6 +9,10 @@ import Page404 from './pages/404';
 import Page503 from './pages/503';
 
 function App() {
+  inject({
+    environment: "production",
+  });
+
   return (
     <BrowserRouter>
       <Routes>
