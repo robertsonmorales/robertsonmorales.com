@@ -1,15 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <title>Robertson Morales | Web Development Services for Small and Medium Businesses | Freelance Web Developer & Designer based in the Philippines</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Robertson Morales | Web Development Services for Small and Medium Businesses | Freelance Web Developer & Designer based in the Philippines" />
+    <meta name="keywords" content="web development services for small and medium businesses, custom web design, custom web development, ui/ux design, on-page seo, website troubleshooting">
+    <meta name="description" content="I am a Web developer and Designer with over 3+ years of experience. I love my job and I am passionate about using my skills to create beautiful and functional websites that meet the needs of my clients." />
+    <meta name="author" content="Robertson Morales">
+    <meta name="robots" content="index, follow">
+    <meta name="google-site-verification" content="2Et3XLvckUFiFi6rMhGa-lAHdTVqtpq0FRBf19-3QD8" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://robertson-morales.vercel.app/" />
+    <meta property="og:title" content="Robertson Morales | Web Development Services for Small and Medium Businesses | Freelance Web Developer & Designer based in the Philippines" />
+    <meta property="og:description" content="I am a Web developer and Designer with over 3+ years of experience. I love my job and I am passionate about using my skills to create beautiful and functional websites that meet the needs of my clients." />
+    <meta property="og:image" content="https://robertson-morales.vercel.app/resources/images/me/profile.webp" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://robertson-morales.vercel.app/" />
+    <meta property="twitter:title" content="Robertson Morales | Web Development Services for Small and Medium Businesses | Freelance Web Developer & Designer based in the Philippines" />
+    <meta property="twitter:description" content="I am a Web developer and Designer with over 3+ years of experience. I love my job and I am passionate about using my skills to create beautiful and functional websites that meet the needs of my clients." />
+    <meta property="twitter:image" content="https://robertson-morales.vercel.app/resources/images/me/profile.webp" />
+
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon.ico" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -24,10 +41,52 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+
+    <link rel="canonical" href="https://robertson-morales.vercel.app">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NCR2QZVRF6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-NCR2QZVRF6');
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <!-- Messenger Chat plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat"></div>
+
+    <script>
+        var chatbox = document.getElementById('fb-customer-chat');
+        chatbox.setAttribute("page_id", "105844545345201");
+        chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+            xfbml            : true,
+            version          : 'v15.0'
+            });
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    
     <div id="root"></div>
     <!--
       This HTML file is a template.
