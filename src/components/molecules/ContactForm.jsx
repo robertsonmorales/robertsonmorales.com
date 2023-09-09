@@ -106,6 +106,7 @@ function ContactForm({ onShowModal }) {
                     <div className="input-group">
                         <label htmlFor="first_name">First Name <span className="text-danger">*</span></label>
                         <input type="text"
+                            id="first_name"
                             name="first_name"
                             className={`form-control ${errors.first_name && 'is-invalid'}`}
                             autoComplete="off"
@@ -122,6 +123,7 @@ function ContactForm({ onShowModal }) {
                     <div className="input-group">
                         <label htmlFor="last_name">Last Name <span className="text-danger">*</span></label>
                         <input type="text"
+                            id="last_name"
                             name="last_name"
                             className={`form-control ${errors.last_name && 'is-invalid'}`}
                             autoComplete="off"
@@ -139,7 +141,8 @@ function ContactForm({ onShowModal }) {
                 <div className="col">
                     <div className="input-group">
                         <label htmlFor="email_address">Email Address <span className="text-danger">*</span></label>
-                        <input type="text"
+                        <input type="text" 
+                            id="email_address"
                             name="email_address"
                             className={`form-control ${errors.email_address && 'is-invalid'}`}
                             autoComplete="off"
@@ -155,6 +158,7 @@ function ContactForm({ onShowModal }) {
                     <div className="input-group">
                         <label htmlFor="phone_number">Phone Number <span className="text-danger">*</span></label>
                         <input type="text"
+                            id="phone_number"
                             name="phone_number"
                             className={`form-control ${errors.phone_number && 'is-invalid'}`}
                             autoComplete="off"
@@ -169,9 +173,7 @@ function ContactForm({ onShowModal }) {
             </div>
 
             <div className="input-group">
-                <label htmlFor="subject">What do you want me to do?
-                {/* <span className="text-danger">*</span> */}
-                </label>
+                <div>What do you want me to do?</div>
                 <div id="offered-services">{ offeredServices }</div>
                 { errors.services && <span className="invalid-feedback">Please select at least one.</span> }
             </div>
