@@ -14,10 +14,10 @@ const myWorks = [
         title: "Renobuild Construction Services",
         tags: [{
             id: 1,
-            name: "uiux-design"
+            name: "UI/UX Design"
         }, {
             id: 2,
-            name: "figma"
+            name: "Figma"
         }],
         description: "Renobuild Construction Services is a trusted provider of comprehensive construction solutions. With a commitment to excellence, we specialize in a wide range of construction services, including renovations, remodeling, and new construction projects.",
         link: "https://dribbble.com/shots/21817669-Renobuild-Construction-Services-Web-Design",
@@ -30,10 +30,10 @@ const myWorks = [
         title: "QuickPOS",
         tags: [{
             id: 1,
-            name: "uiux-design"
+            name: "UI/UX Design"
         }, {
             id: 2,
-            name: "figma"
+            name: "Figma"
         }],
         description: "Introducing QuickPOS, the advanced point-of-sale solution that revolutionizes your business with effortless transactions, streamlined operations, comprehensive inventory management, insightful sales analytics, and exceptional customer engagement. Experience the power of QuickPOS to propel your business forward.",
         link: "https://dribbble.com/shots/21636574-QuickPOS-Point-Of-Sale-Platform",
@@ -46,10 +46,10 @@ const myWorks = [
         title: "CareerSpace",
         tags: [{
             id: 1,
-            name: "uiux-design"
+            name: "UI/UX Design"
         }, {
             id: 2,
-            name: "figma"
+            name: "Figma"
         }],
         description: "Welcome to Careerspace, the ultimate destination for job seekers and employers alike. At Careerspace, employers can effortlessly post job availabilities and connect with talented individuals who are eager to kick-start their careers.",
         link: "https://dribbble.com/shots/20691887-Careerspace-Job-Posting-Platform",
@@ -62,10 +62,10 @@ const myWorks = [
         title: "Travelbuddy",
         tags: [{
             id: 1,
-            name: "uiux-design"
+            name: "UI/UX Design"
         }, {
             id: 2,
-            name: "figma"
+            name: "Figma"
         }],
         description: "Travelbuddy is a hotel booking platform that offers a variety of accommodations with 24/7 support. Whether you're looking for a luxurious hotel or a budget-friendly hostel, Travelbuddy has something for everyone. With our easy-to-use search engine, you can find the perfect place to stay in any destination. And with our 24/7 support, you can always get help if you need it.",
         link: "https://dribbble.com/shots/20628703-Travelbuddy-Online-Hotel-Booking-Platform",
@@ -78,13 +78,13 @@ const myWorks = [
         title: "Online Mobile Banking",
         tags: [{
             id: 1,
-            name: "uiux-design"
+            name: "UI/UX Design"
         }, {
             id: 2,
-            name: "figma"
+            name: "Figma"
         }, {
             id: 3,
-            name: "mobile-design"
+            name: "Mobile Design"
         }],
         description: "Mobile online banking is a way to access your bank accounts and do your banking on the go. You can use your smartphone or tablet to view account balances, transfer funds, pay bills, and even deposit checks.",
         link: "https://dribbble.com/shots/20602030-Online-Banking-Mobile-App",
@@ -97,10 +97,10 @@ const myWorks = [
         title: "E-Commerce UI/UX Design",
         tags: [{
             id: 1,
-            name: "uiux-design"
+            name: "UI/UX Design"
         }, {
             id: 2,
-            name: "figma"
+            name: "Figma"
         }],
         description: "The E-Commerce design website focuses on sportswear and apparel products for users. A vibrant and energetic color would be a good option for the website, as it would be user-friendly and help to create a positive and engaging experience for users.",
         link: "/503",
@@ -113,13 +113,13 @@ const myWorks = [
         title: "MLS JC Construction Services",
         tags: [{
             id: 1,
-            name: "uiux-design"
+            name: "UI/UX Design"
         }, {
             id: 2,
-            name: "figma"
+            name: "Figma"
         }, {
             id: 3,
-            name: "frontend-development"
+            name: "Front-End Development"
         }],
         description: "MLS JC Construction Services is now primarily engaged in construction services. Site development, road concreting, and design and build of residential, commercial, industrial building structures and other civil works projects.",
         link: "https://mlsjcconstruction.com",
@@ -132,13 +132,13 @@ const myWorks = [
         title: "Viewcon Building Group",
         tags: [{
             id: 1,
-            name: "content-management-system"
+            name: "Content Management System"
         }, {
             id: 2,
-            name: "wix"
+            name: "Wix"
         }, {
             id: 3,
-            name: "seo"
+        name: "SEO"
         }],
         description: "Viewcon Building Group is a Melbourne-based construction company that specializes in custom designed homes and new townhouse developments. With over 17 years of experience, Viewcon prides itself on exceptional customer service and communication throughout the build process.",
         link: "https://www.viewconbg.com.au",
@@ -151,10 +151,10 @@ const myWorks = [
         title: "Professional Portfolio Design",
         tags: [{
             id: 1,
-            name: "uiux-design"
+            name: "UI/UX Design"
         },{
             id: 2,
-            name: "frontend-development"
+            name: "Front-End Development"
         }],
         description: "This Professional Portfolio Template is a one-page website template that is user-friendly and responsive. It has sections for Clients, Services, Projects, Testimonials, About Me, and Contact Me.",
         link: "https://jethrocaparroso.netlify.app",

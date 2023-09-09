@@ -28,7 +28,7 @@ function Subheadline({ section, label }) {
                 <span ref={ sectionRef } className="white-space-nowrap">{ section }</span>
                 <div className="borders"></div>
             </div>
-            <h1 ref={ headingRef } className="text-highlight" dangerouslySetInnerHTML={{ __html: label }} />
+            <h2 ref={ headingRef } className="text-highlight" dangerouslySetInnerHTML={{ __html: label }} />
         </div>
     );  
 }

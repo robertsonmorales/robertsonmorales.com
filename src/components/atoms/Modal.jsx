@@ -16,7 +16,7 @@ function Modal({ ...behavior }) {
             return (
                 <>
                     <h3>Oops! Message Failed to Send</h3>
-                    <p className="text-muted mb-4" dangerouslySetInnerHTML="Please hold on, we're working to fix the issue. Feel free to try sending your <br> message again shortly. Thank you for your patience!" />
+                    <p className="text-muted mb-4" dangerouslySetInnerHTML={{__html: "Please hold on, we're working to fix the issue. Feel free to try sending your <br> message again shortly. Thank you for your patience!"}} />
                 </>
             )
         }
@@ -31,7 +31,7 @@ function Modal({ ...behavior }) {
                     </div>
         
                     <div className="text-center">
-                        {setMessage}
+                        { setMessage() }
                         <button type="button" onClick={ () => setCloseModal(false) } className="btn btn-outline-primary">Close</button>
                     </div>
                 </div>
