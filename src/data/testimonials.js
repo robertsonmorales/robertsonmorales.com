@@ -14,6 +14,14 @@ const testimonials = [
       feedback: '<span class="testimonial--highlight">Very attentive, responsive and professional</span>, <br /> would definitely recommend Robert to anyone.',
       postUrl: 'https://www.facebook.com/haidar.maliki.146/posts/961460288589621',
       isActive: false
+    },
+    {
+      id: 2,
+      client: 'Renzo Rebolos',
+      title: 'MLS JC Construction Services',
+      feedback: `I've worked with Robert twice already and both times he's delivered above and beyond what I needed. <span class="testimonial--highlight">Easy to converse with, knows what needs to be done with minimal supervision</span>. Hoping to work again with him in future projects soon!`,
+      postUrl: 'https://www.facebook.com/renzo.rebolos/posts/6331411720314834',
+      isActive: false
     }
 ];
 
