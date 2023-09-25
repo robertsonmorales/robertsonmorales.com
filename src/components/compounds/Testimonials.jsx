@@ -53,9 +53,11 @@ class Testimonials extends React.Component {
           <div id="carouselTestimonials" className="carousel slide" data-ride="carousel">
             <div className="carousel-inner">{ this.renderItem() }</div>
 
+            {/* TODO: Fix this */}
             <ol className="carousel-indicators">
               <li data-target="#carouselTestimonials" data-slide-to="0" className="active"></li>
               <li data-target="#carouselTestimonials" data-slide-to="1"></li>
+              <li data-target="#carouselTestimonials" data-slide-to="2"></li>
             </ol>
           </div>
         </div>
