@@ -1,3 +1,4 @@
+import React from "react";
 import Contacts from "../components/compounds/Contacts";
 
 function MoreProjects() {

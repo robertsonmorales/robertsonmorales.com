@@ -1,3 +1,4 @@
+import React from "react";
 import MaintenanceMode from "../images/svg/503.svg";
 
 function Page504(){
