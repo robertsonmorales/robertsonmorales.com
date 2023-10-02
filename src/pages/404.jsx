@@ -1,3 +1,4 @@
+import React from "react";
 import NotFoundImage from "../images/svg/404.svg";
 
 function Page404(){

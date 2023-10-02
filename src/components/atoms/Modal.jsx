@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import FeatherIcon from "feather-icons-react";
 
 function Modal({ ...behavior }) {
